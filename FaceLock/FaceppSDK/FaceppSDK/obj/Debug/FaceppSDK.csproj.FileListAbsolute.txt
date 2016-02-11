@@ -1,0 +1,10 @@
+C:\Users\jmai\Downloads\facepp-csharp-sdk-beta-master\FaceppSDK\FaceppSDK\obj\Debug\FaceppSDK.csprojResolveAssemblyReference.cache
+C:\Users\jmai\Downloads\facepp-csharp-sdk-beta-master\FaceppSDK\FaceppSDK\bin\Debug\FaceppSDK.dll
+C:\Users\jmai\Downloads\facepp-csharp-sdk-beta-master\FaceppSDK\FaceppSDK\bin\Debug\FaceppSDK.pdb
+C:\Users\jmai\Downloads\facepp-csharp-sdk-beta-master\FaceppSDK\FaceppSDK\bin\Debug\log4net.dll
+C:\Users\jmai\Downloads\facepp-csharp-sdk-beta-master\FaceppSDK\FaceppSDK\obj\Debug\FaceppSDK.dll
+C:\Users\jmai\Downloads\facepp-csharp-sdk-beta-master\FaceppSDK\FaceppSDK\obj\Debug\FaceppSDK.pdb
+C:\Users\jmai\Documents\MyProject\FaceLock\FaceppSDK\FaceppSDK\bin\Debug\FaceppSDK.dll
+C:\Users\jmai\Documents\MyProject\FaceLock\FaceppSDK\FaceppSDK\bin\Debug\FaceppSDK.pdb
+C:\Users\jmai\Documents\MyProject\FaceLock\FaceppSDK\FaceppSDK\obj\Debug\FaceppSDK.dll
+C:\Users\jmai\Documents\MyProject\FaceLock\FaceppSDK\FaceppSDK\obj\Debug\FaceppSDK.pdb
