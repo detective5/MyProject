@@ -53,3 +53,4 @@ C:\Users\jmai\Documents\MyProject\FaceLock\FaceLock\obj\Debug\FaceLock.exe.manif
 C:\Users\jmai\Documents\MyProject\FaceLock\FaceLock\obj\Debug\FaceLock.application
 C:\Users\jmai\Documents\MyProject\FaceLock\FaceLock\obj\Debug\FaceLock.exe
 C:\Users\jmai\Documents\MyProject\FaceLock\FaceLock\obj\Debug\FaceLock.pdb
+C:\Users\jmai\Documents\MyProject\FaceLock\FaceLock\obj\Debug\FaceLock.csprojResolveAssemblyReference.cache

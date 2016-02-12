@@ -142,10 +142,17 @@ namespace FaceLock
                 DetectResult detectResult = fs.Detection_DetectImg(System.Environment.CurrentDirectory + "/temp.jpg");
                 File.Delete(System.Environment.CurrentDirectory + "/temp.jpg");
                 if (stage == "Default")
+                {
                     DefaultStage(detectResult);
-                else
-                    AddFaceStage(detectResult);
+                    camera.Content = "Run Camera";
 
+                }
+
+                else
+                {
+                    AddFaceStage(detectResult);
+                    cameraTab.Content = "Run Camera";
+                }
                 //videoSource.Stop();         
             }
             else
@@ -153,7 +160,10 @@ namespace FaceLock
                 videoSource = new VideoCaptureDevice(videoDevices[deviceComboBox.SelectedIndex].MonikerString);
                 videoSource.NewFrame += videoSource_NewFrame;
                 videoSource.Start();
-
+                if (stage == "Default")
+                    camera.Content = "Detect";
+                else
+                    cameraTab.Content = "Detect";
             }
         }
         private void AddFaceStage(DetectResult detectResult)
@@ -205,6 +215,7 @@ namespace FaceLock
         }
         private void RestoreDefault()
         {
+            
             status.Content = "";
             defaultTab.IsSelected = true;
             lockFile.IsEnabled = false;
@@ -373,6 +384,7 @@ namespace FaceLock
                 //Delete the original file
                 File.Delete(inputFile);
                 MessageBox.Show("File Encrypted");
+                FileTextBox.Text = "";
             }
             catch (Exception ex)
             {
@@ -440,6 +452,7 @@ namespace FaceLock
                 //result
                 File.Delete(deleteFile);
                 MessageBox.Show(message);
+                FileTextBox.Text = "";
             }
             catch (Exception ex)
             {

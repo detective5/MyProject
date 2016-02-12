@@ -24,7 +24,7 @@
                         <ColumnDefinition Width="75*"/>
                         <ColumnDefinition Width="0*"/>
                     </Grid.ColumnDefinitions>
-                    <Label Name="devie" Content="Device:" Margin="10,7,54,0" RenderTransformOrigin="0.194,0.429" Height="21" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Label Name="devie" Content="Device:" Margin="10,7,77,0" RenderTransformOrigin="0.194,0.429" Height="38" VerticalAlignment="Top" Grid.Column="1"/>
                     <Label Name="name" HorizontalAlignment="Left" Content="Full Name:" Grid.Column="2" Margin="0,33,0,133" RenderTransformOrigin="0.194,0.429" Width="64"/>
                     <Label Name="statusLabel" HorizontalAlignment="Left" Content="Status:" Grid.Column="2" Margin="1,85,0,79" RenderTransformOrigin="0.194,0.429" Width="47"/>
                     <Label Name="status"  HorizontalAlignment="Left" Content="" Grid.Column="2" Margin="53,85,0,79" Height="Auto" Width="316"/>
@@ -32,7 +32,7 @@
                     <ComboBox Name="deviceComboBox"  Margin="60,7,1,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2" Height="21"/>
                     <Button Content="Choose File" HorizontalAlignment="Left" Margin="1,114,0,0" VerticalAlignment="Top" Width="75" Click="ChooseFile" RenderTransformOrigin="-1.533,-0.2" Grid.Column="2" Height="20"/>
                     <TextBox x:Name="FileTextBox" Margin="81,114,0,54" TextWrapping="NoWrap"  Text="" HorizontalAlignment="Left" Grid.Column="2" RenderTransformOrigin="0.7,-0.37" Width="264"/>
-                    <Button Content="Record/Detect" HorizontalAlignment="Left" Click="RecordCapture" Margin="53,60,0,0" Width="127" Height="20" VerticalAlignment="Top" Grid.Column="2" RenderTransformOrigin="0.496,2.1"/>
+                    <Button Name="camera" Content="Run Camera" HorizontalAlignment="Left" Click="RecordCapture" Margin="53,60,0,0" Width="127" Height="20" VerticalAlignment="Top" Grid.Column="2" RenderTransformOrigin="0.496,2.1"/>
                     <Button Name="lockFile" IsEnabled="False" Content="Lock File" Click="Encrypt" HorizontalAlignment="Left"  Margin="0,139,0,0" Width="68" Height="20" VerticalAlignment="Top" Grid.Column="2" RenderTransformOrigin="0.496,2.1"/>
                     <Button Name="UnlockFile" IsEnabled="False" Content="UnLock File" Click="Decrypt" HorizontalAlignment="Left"  Margin="73,139,0,0" Width="68" Height="20" VerticalAlignment="Top" Grid.Column="2" RenderTransformOrigin="0.496,2.1"/>
                     <Button Name="Increase" IsEnabled="False" Content="Increase Accuracy" HorizontalAlignment="Left" Click="ChangeMenu" Margin="146,139,0,0" Width="105" Height="20" VerticalAlignment="Top" Grid.Column="2" RenderTransformOrigin="0.496,2.1"/>
@@ -44,16 +44,16 @@
                         <ColumnDefinition Width="3*"/>
                         <ColumnDefinition Width="94*"/>
                     </Grid.ColumnDefinitions>
-                    <Button Content="Record/Add Face" Click="RunCamera" HorizontalAlignment="Center" Margin="204,75,242,67" Width="118" Grid.Column="1"></Button>
+                    <Button Name="cameraTab" Content="Run Camera" Click="RunCamera" HorizontalAlignment="Center" Margin="204,75,242,67" Width="118" Grid.Column="1"></Button>
                 </Grid>
             </TabItem>
             <TabItem Header="How To">
             <Grid>
                 <Label Content="1. Choose a camera device that is installed on your machine." Margin="10,0,66,163"/>
                 <Label Content="2. Enter a name that you want the system to recognize you as." Margin="10,25,66,138"/>
-                <Label Content="3. Click the Record/Detect button to turn on your camera, and Click it again to detect your face." Margin="10,50,66,113"/>
+                <Label Content="3. Click the Run Camera button to turn on your camera, and Click it again to detect your face." Margin="10,50,66,113"/>
                     <Label Content="4. For first time user, the system will automatically recognize you as the name you put in." Margin="10,75,66,88"/>
-                    <Label Content="5. Once you are verified, you can then use the lock/unlock files and increase accuracy feature." Margin="10,100,66,63"/>
+                    <Label Content="5. Once you are verified as the same person, you can use the lock/unlock files and increase accuracy feature." Margin="10,100,21,63"/>
                     <Label   Margin="10,125,10,0">
                         <TextBlock TextWrapping="WrapWithOverflow" Height="53" Foreground="#FFF51616">
                             * It is highly recommended to use the increase accuracy feature for the first time. Remember the more faces you add, the more accurate the result will be. <LineBreak/>
